@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Script con Ciclo WHILE che stoppa un programma
+while [ "$dir" !=  "STOP " ]
+	do
+	echo "Digita STOP"
+	read dir
+	if [ "$dir" = "STOP" ];then
+	exit 0
+	else
+	echo "Benvenuto"
+	fi
+	done

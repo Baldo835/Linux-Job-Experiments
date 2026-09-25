@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Ciclo FOR che stampa un elenco di sue valori scelti
+for item in Server_1 Server_2 Server_3; do
+	echo "Benvenuto in $item "
+done
+
+echo "Tutti i file sono stati registrati. "

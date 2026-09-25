@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Script Controllo Esistenza Percorso o Directory
+if [-f $"/home/antonio/shell_job/"];then
+	echo "Esiste in questo percorso"
+else
+	echo "Non esiste in questo percorso."
+fi

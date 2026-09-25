@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Script con Condizione se la variabile rispecchia quest'ultima
+var_1=500;
+
+if [ "$var_1" -gt  300]; then
+
+	echo "$var_1 è sbagliato"
+exit 1
+
+else 
+
+	echo "$var_1 è corretto"
+exit 0
+fi

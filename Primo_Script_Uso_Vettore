@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Script con uso di Vettore per creare cartelle rispettandp una condizione numerica
+v=()
+
+for ((i=1 ; i<5 ; i++))
+do
+	echo "Dai un nome ad  una cartella: "
+	read cartella
+	v+=("$cartella")
+done
+
+for info in "${v[@]}"
+do
+	echo "Ora creo la cartella: "
+	mkdir -p "$info"
+done
+
+
+

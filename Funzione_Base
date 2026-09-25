@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Script di una funzione semplice
+function prima_funzione {
+
+	echo "Questa è la prima funzione"
+
+}
+
+prima_funzione
+
+

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+#Ciclo FOR che avvia la creazione di due cartelle
+for item in PDF JPG
+do
+	mkdir "$item"
+done
+
+#Ciclo FOR che avvia la creazione di due file
+for file in File1.pdf File2.jpg
+do
+	touch "$file"
+done
+
+#Ciclo FOR che attraverso due condizioni IF controlla  se i due file rispecchiano 
+#estensione
+
+for file in File1.pdf File2.jpg
+do
+
+if [[ "$file" == "*.pdf" ]];then
+	mv File1.pdf PDF/
+
+
+elif [[ "$file" == "*.jpg" ]];then
+	mv File2.jpg JPG/
+
+else
+	echo "File inseriti"
+fi
+
+done

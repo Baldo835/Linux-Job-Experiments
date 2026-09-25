@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Condizione per controllare se le cartelle sono vuote e inserire un file di testo vuoto
+if [ -d "Antonio" -a -d "Federico" ]; then
+	for item in "Antonio" "Federico"; do
+	touch "$item/backup.txt"
+	done
+exit 0
+fi
+
+

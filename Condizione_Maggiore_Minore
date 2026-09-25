@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Condizione che SE i due valori sono piu' grande o piu' piccolo tra loro
+if [ -z "$1" || -z "$2" ]; then
+
+	echo "Errore"
+exit 1
+fi
+
+if [ "$1" -gt "$2" ]; then
+
+	echo "è maggiore"
+exit 0
+
+elif [  "$1" -lt "$2" ]; then
+
+	echo "è minore"
+exit 0
+
+else
+	echo "sono identici";
+exit 0
+fi

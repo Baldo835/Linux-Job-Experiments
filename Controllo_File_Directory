@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# SCRIPT DI CONTROLLO: Controllo se si tratta di un FILE o una DIRECTORY
+if [ -z "$1" ]; then
+	echo "Manca l'argomento ";
+exit 1;
+
+fi
+
+if [-f "$1" ]; then
+	echo "Si tratta di un file ";
+exit 0;
+
+elif [-d "$1" ]; then 
+	echo "Si tratta di una directory ";
+exit 0;
+else
+	echo "Non è nessuno dei due ";
+exit 2;
+fi
+

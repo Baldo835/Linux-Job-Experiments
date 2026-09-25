@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Script di un programma che crea cartelle o directory
+while [ "$dir" != "STOP" ]
+	do
+		echo "Digita il nome per una nuova cartella: "
+		read dir
+		mkdir "$dir"
+		echo "Crea una nuova cartella"
+	done
+

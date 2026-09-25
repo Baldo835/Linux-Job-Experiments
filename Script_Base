@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Script base che stampa 
+echo "Questo è il mio primo script."
+echo "La cartella corrente è: "
+pwd
+echo "Ecco lo stato dei dischi: "
+lsblk
+

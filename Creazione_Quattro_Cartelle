@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Ciclo FOR che crea quattro cartelle sfruttando un solo uso di MKDIR
+for item in Antonio Federico Enkela Daniele; do
+	mkdir "$item"
+done
+

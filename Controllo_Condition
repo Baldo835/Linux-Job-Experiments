@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Script Controllo Directory se corrisponde
+if [ -z "$1" ]; then
+
+	echo "Hai dimenticato il nome";
+
+exit 1;
+fi
+
+if [ -d "$1" ]; then
+
+	echo "Corrisponde alla Directory";
+
+exit 0;
+
+else
+	echo "Non corrisponde alla directory";
+exit 2;
+fi
+
+
