@@ -1,0 +1,20 @@
+#!/bin/bash
+
+case "$prova" in
+	1)
+
+	echo "Primo split"
+	;;
+
+	2)
+
+	echo "Secondo Split"
+	;;
+
+	*)
+
+	echo "Valore non riconosciuto"
+	;;
+
+esac
+
